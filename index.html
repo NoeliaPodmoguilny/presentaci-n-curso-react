@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Noelia Podmoguilny</title>
+</head>
+<body class="bgColorBody">
+    <nav aria-label="Site Nav" class="mx-auto flex w-screen items-center justify-center p-6">
+        <ul class="flex items-center gap-2 text-sm  text-gray-700">
+            <li>
+                <a class="rounded-lg px-3 py-2 hover:text-gray-700/50 " href="/"> Home </a>
+            </li>
+            <li>
+                <a class="rounded-lg px-3 py-2  hover:text-gray-700/50" href="#education"> Education </a>
+            </li>
+            <li>
+                <a class="rounded-lg px-3 py-2 hover:text-gray-700/50 " href="#contact" >Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <header class="w-screen">
+        <div class="flex justify-center static">
+            <div class="bg-contain rounded-md bg-center w-[60vw] h-[35vh] max-lg:hidden" style="background-image: url(./assets/react1.jpg) ">
+            </div>
+            <img src="./assets/fondo city.png" alt="Foto perfil" 
+                class="h-[25%] bordercolor border-4 rounded-full absolute left-[25%] top-[35%] max-lg:h-[25%] max-lg:left-[25%]   max-lg:top-[8%]">
+            <div class="absolute right-[25%] top-[50%] max-lg:top-[35%]">
+                <a class="inline-flex items-center gap-2 rounded border-2 border-[#171515] bg-[#171515] px-3 py-1 mx-[0.5em] text-sm font-medium text-white transition-colors hover:bg-transparent hover:text-[#171515] focus:outline-none focus:ring active:opacity-75" href="" target="_blank" rel="noreferrer">
+                    GitHub
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" ></path>
+                    </svg>
+                </a>
+                <a class="inline-flex items-center gap-2 rounded border-2 border-[#0077b5] bg-[#0077b5] px-3 py-1 mx-[0.5em] text-sm font-medium text-white transition-colors hover:bg-transparent hover:text-[#0077b5] focus:outline-none focus:ring active:opacity-75" href="" target="_blank" rel="noreferrer">
+                    LinkedIn
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="none" d="M0 0h24v24H0z" /><path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="flex-col my-[7%] max-lg:mt-[55%]">               
+            <div class="w-[60%] ml-[20%] font1 font-extrabold text-[3em] txtshadowNombre">Noelia Podmoguilny</div>
+            <div class="w-[60%] ml-[20%] borderDiv text-gray-700 ">Actualmente trabajando en Ambiente, más precisamente en Bosques Nativos.</div>
+            <div class="w-[60%] ml-[20%] borderDiv text-gray-700 ">A fines del 2021 empecé a investigar sobre DESARROLLO WEB por curiosidad, y terminé inscribiendome en el curso de Full Stack Java. Ahí descubrí a lo que realmente quería dedicarme, y desde entonces estoy capacitándome continuamente.</div>
+            <div class="w-[60%] ml-[20%] borderDiv text-gray-700 ">Si bien hice el curso de Full Stack, por el momento, estoy profundizando en Desarrollo Front End.</div>
+        </div>
+    </header> 
+
+    <main class="bgColorMain" >
+        <!-- <section class="flex flex-col">
+            <div>
+                <button id="skills" class="animate-pulse focus:animate-none px-8 py-2 mt-[1em] ml-[38%] bg-rose-400 text-gray-300 hover:text-gray-300 hover:scale-[0.9] font-mono font-semibold rounded-full">Skills</button>
+            </div>
+            <div 
+                id="anclaArr" 
+                class="w-[60vw] mx-auto rounded-[2em] m-[2em]">
+            </div>
+        </section> -->
+        <section id="education" class=" w-[61%] ml-[20%]">
+            <div class="max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+              <div class="max-w-xl">
+                <h2 class="text-3xl txtshadowEducation font-bold text-[2.5em]">Education</h2>
+              </div>
+          
+              <div
+                class="mt-8 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3"
+              >
+                <div class="flex items-start gap-4">
+                  <span class="shrink-0 rounded-lg p-4">
+                    <svg
+                      class="h-5 w-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                      <path
+                        d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                      ></path>
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+                      ></path>
+                    </svg>
+                  </span>
+          
+                  <div>
+                    <h2 class="text-lg text-gray-800 font-bold">TECNICATURA EN DESARROLLO DE SOFTWARE</h2>
+          
+                    <p class="mt-1 text-sm text-gray-700">
+                        I.E.S. "Juan Mantovani"
+                        (2023)                        
+                    </p>
+                  </div>
+                </div>
+          
+                <div class="flex items-start gap-4">
+                  <span class="shrink-0 rounded-lg  p-4">
+                    <svg
+                      class="h-5 w-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                      <path
+                        d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                      ></path>
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+                      ></path>
+                    </svg>
+                  </span>
+          
+                  <div>
+                    <h2 class="text-lg text-gray-800 font-bold">CURSO DE REACT</h2>
+          
+                    <p class="mt-1 text-sm text-gray-700">
+                        Codo a codo - Gobierno de la Ciudad de Buenos Aires
+                        (2023)
+                    </p>
+                  </div>
+                </div>
+          
+                <div class="flex items-start gap-4">
+                  <span class="shrink-0 rounded-lg p-4">
+                    <svg
+                      class="h-5 w-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                      <path
+                        d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                      ></path>
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+                      ></path>
+                    </svg>
+                  </span>
+          
+                  <div>
+                    <h2 class="text-lg text-gray-800 font-bold">CURSO DE DISEÑO UX/UI</h2>
+          
+                    <p class="mt-1 text-sm text-gray-700">
+                        Codo a codo - Gobierno de la Ciudad de Buenos Aires
+                        (2023)
+                    </p>
+                  </div>
+                </div>
+          
+                <div class="flex items-start gap-4">
+                  <span class="shrink-0 rounded-lg p-4">
+                    <svg
+                      class="h-5 w-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                      <path
+                        d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                      ></path>
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+                      ></path>
+                    </svg>
+                  </span>
+          
+                  <div>
+                    <h2 class="text-lg text-gray-800 font-bold">CURSO DE JAVASCRIPT</h2>
+          
+                    <p class="mt-1 text-sm text-gray-700">
+                        Educación IT
+                        (2022)
+                    </p>
+                  </div>
+                </div>
+          
+                <div class="flex items-start gap-4">
+                  <span class="shrink-0 rounded-lg p-4">
+                    <svg
+                      class="h-5 w-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                      <path
+                        d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                      ></path>
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+                      ></path>
+                    </svg>
+                  </span>
+          
+                  <div>
+                    <h2 class="text-lg text-gray-800 font-bold">FULL STACK JAVA</h2>
+          
+                    <p class="mt-1 text-sm text-gray-700">
+                        Codo a Codo - Gobierno de la Ciudad de Buenos Aires
+                        (2022)
+                    </p>
+                  </div>
+                </div>
+          
+                <div class="flex items-start gap-4">
+                  <span class="shrink-0 rounded-lg p-4">
+                    <svg
+                      class="h-5 w-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                      <path
+                        d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                      ></path>
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+                      ></path>
+                    </svg>
+                  </span>
+          
+                  <div>
+                    <h2 class="text-lg text-gray-800 font-bold">FULL STACK DEVELOPER</h2>
+          
+                    <p class="mt-1 text-sm text-gray-700">
+                        Argentina Programa - Ministerio de Economía de la Nación
+                        (2022)                        
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main> 
+
+          <section id="contact" class=" w-[61%] ml-[20%] bgColorBody">
+            <div class="rounded-lg bgColorBody p-8 lg:col-span-3 lg:p-12">
+              <form action="" class="space-y-4">
+                <div>
+                  <label class="sr-only" for="name">Name</label>
+                  <input
+                    class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                    placeholder="Name"
+                    type="text"
+                    id="name"
+                  />
+                </div>
+      
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  <div>
+                    <label class="sr-only" for="email">Email</label>
+                    <input
+                      class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                      placeholder="Email address"
+                      type="email"
+                      id="email"
+                    />
+                  </div>
+      
+                  <div>
+                    <label class="sr-only" for="phone">Phone</label>
+                    <input
+                      class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                      placeholder="Phone Number"
+                      type="tel"
+                      id="phone"
+                    />
+                  </div>
+                </div>
+      
+                <div>
+                  <label class="sr-only" for="message">Message</label>
+      
+                  <textarea
+                    class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                    placeholder="Message"
+                    rows="8"
+                    id="message"
+                  ></textarea>
+                </div>
+      
+                <div class="mt-4 ml-[40%]">
+                  <button
+                    type="submit"
+                    class="gap-2 rounded border-2 border-[#171515] bg-[#171515] px-3 py-1 mx-[0.5em] text-sm font-medium text-white transition-colors hover:bg-transparent hover:text-[#171515] focus:outline-none focus:ring active:opacity-75"
+                  >
+                    Send Enquiry
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>          
+   
+
+    <footer aria-label="Site Footer" class="bgColorBody bordertop">
+        <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+          <ul class="mt-8 flex justify-center gap-6 md:gap-8 ">
+            <li>
+              <a href="" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:text-gray-700/75">
+                <span class="sr-only">GitHub</span>
+                <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                    fill-rule="evenodd"
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:text-gray-700/75">
+                <span class="sr-only">Whatsapp</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" width="22" height="22" viewBox="0 0 24 24">
+                  <path 
+                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+                  />
+                </svg>
+              </a>
+            </li>
+      
+            <li>
+              <a href="" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:text-gray-700/75">
+                <span class="sr-only">Dribbble</span>
+                <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    fill-rule="evenodd"
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="text-gray-700 font-medium text-center mt-[2em]">Noelia Podmoguilny &copy; 2023 </p>
+        </div>
+      </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
