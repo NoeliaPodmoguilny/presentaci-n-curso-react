@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Noelia Podmoguilny</title>
 </head>
 <body class="bgColorBody">
@@ -19,7 +20,7 @@
                 <a class="rounded-lg px-3 py-2  hover:text-gray-700/50" href="#education"> Education </a>
             </li>
             <li>
-                <a class="rounded-lg px-3 py-2 hover:text-gray-700/50 " href="#contact" >Contact</a>
+                <a class="rounded-lg px-3 py-2 hover:text-gray-700/50 " href="#project" >Project</a>
             </li>
         </ul>
     </nav>
@@ -44,24 +45,30 @@
                 </a>
             </div>
         </div>
-        <div class="flex-col my-[7%] max-lg:mt-[55%]">               
-            <div class="w-[60%] ml-[20%] font1 font-extrabold text-[3em] txtshadowNombre">Noelia Podmoguilny</div>
-            <div class="w-[60%] ml-[20%] borderDiv text-gray-700 ">Actualmente trabajando en Ambiente, más precisamente en Bosques Nativos.</div>
-            <div class="w-[60%] ml-[20%] borderDiv text-gray-700 ">A fines del 2021 empecé a investigar sobre DESARROLLO WEB por curiosidad, y terminé inscribiendome en el curso de Full Stack Java. Ahí descubrí a lo que realmente quería dedicarme, y desde entonces estoy capacitándome continuamente.</div>
-            <div class="w-[60%] ml-[20%] borderDiv text-gray-700 ">Si bien hice el curso de Full Stack, por el momento, estoy profundizando en Desarrollo Front End.</div>
+        <div class="flex-col mt-[7%] max-lg:mt-[55%]">               
+          <div class="w-[60%] ml-[20%] font1 font-extrabold text-[3em] txtshadowNombre">Noelia Podmoguilny</div>
         </div>
+        <div id="infoTexto" class="flex-col mt-[2px] max-lg:mt-[57%]">
+        </div>
+
+        <section class="flex flex-col">
+          <div>
+              <button 
+                  id="skills" 
+                  class=" ml-[20%] mt-4 inline-flex items-center gap-2 rounded border-2 border-[#171515] px-3 py-1 mx-[0.5em] text-sm font-medium text-black transition-colors bg-transparent hover:-rotate-12">
+                  Skills
+              </button>
+          </div>
+          <div 
+              id="anclaArr" 
+              class="w-[60vw] mx-auto m-[2em] mt-px text-gray-800"
+              >
+          </div>
+      </section>
     </header> 
 
     <main class="bgColorMain" >
-        <!-- <section class="flex flex-col">
-            <div>
-                <button id="skills" class="animate-pulse focus:animate-none px-8 py-2 mt-[1em] ml-[38%] bg-rose-400 text-gray-300 hover:text-gray-300 hover:scale-[0.9] font-mono font-semibold rounded-full">Skills</button>
-            </div>
-            <div 
-                id="anclaArr" 
-                class="w-[60vw] mx-auto rounded-[2em] m-[2em]">
-            </div>
-        </section> -->
+      <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="py-12">
         <section id="education" class=" w-[61%] ml-[20%]">
             <div class="max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
               <div class="max-w-xl">
@@ -265,70 +272,75 @@
               </div>
             </div>
           </section>
-        </main> 
-
-          <section id="contact" class=" w-[61%] ml-[20%] bgColorBody">
-            <div class="rounded-lg bgColorBody p-8 lg:col-span-3 lg:p-12">
-              <form action="" class="space-y-4">
-                <div>
-                  <label class="sr-only" for="name">Name</label>
-                  <input
-                    class="w-full rounded-lg border-gray-200 p-3 text-sm"
-                    placeholder="Name"
-                    type="text"
-                    id="name"
-                  />
-                </div>
-      
-                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                  <div>
-                    <label class="sr-only" for="email">Email</label>
-                    <input
-                      class="w-full rounded-lg border-gray-200 p-3 text-sm"
-                      placeholder="Email address"
-                      type="email"
-                      id="email"
-                    />
-                  </div>
-      
-                  <div>
-                    <label class="sr-only" for="phone">Phone</label>
-                    <input
-                      class="w-full rounded-lg border-gray-200 p-3 text-sm"
-                      placeholder="Phone Number"
-                      type="tel"
-                      id="phone"
-                    />
-                  </div>
-                </div>
-      
-                <div>
-                  <label class="sr-only" for="message">Message</label>
-      
-                  <textarea
-                    class="w-full rounded-lg border-gray-200 p-3 text-sm"
-                    placeholder="Message"
-                    rows="8"
-                    id="message"
-                  ></textarea>
-                </div>
-      
-                <div class="mt-4 ml-[40%]">
-                  <button
-                    type="submit"
-                    class="gap-2 rounded border-2 border-[#171515] bg-[#171515] px-3 py-1 mx-[0.5em] text-sm font-medium text-white transition-colors hover:bg-transparent hover:text-[#171515] focus:outline-none focus:ring active:opacity-75"
-                  >
-                    Send Enquiry
-                  </button>
-                </div>
-              </form>
-            </div>
           </div>
-        </div>
-      </section>          
-   
+          <div class="bgColorBody">
+          <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="py-12">
+            <section class="articles" id="project">
+                <article>
+                    <div class="article-wrapper">
+                        <figure>
+                            <img src="./assets/codoacodoprojectfinal.png" class="bg-cover imgCards" alt="Imagen de proyecto" />
+                        </figure>
+                        <div class="article-body">
+                            <h2 class="txtshadowEducation">Trabajo integrador</h2>
+                            <p>
+                                Desarrollo de página web responsive con HTML, CSS, BOOTSTRAP Y JAVASCRIPT
+                            </p>
+                            <a href="https://noelia-podmoguilny-proyecto-cac.netlify.app/" target="_blank" class="read-more">
+                                Ver <span class="sr-only"></span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-    <footer aria-label="Site Footer" class="bgColorBody bordertop">
+                <article>
+                    <div class="article-wrapper">
+                        <figure>
+                            <img src="./assets/calculadora.PNG" class="bg-cover imgCards" alt="Imagen de proyecto" />
+                        </figure>
+                        <div class="article-body">
+                            <h2 class="txtshadowEducation">Calculadora</h2>
+                            <p>
+                                Desarrollo de calculadora web con HTML, CSS, ANGULAR y TYPESCRIPT
+                            </p>
+                            <a href="https://calculadora-np.netlify.app/" target="_blank" class="read-more">
+                                Ver <span class="sr-only">about this is some title</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="article-wrapper">
+                        <figure>
+                            <img src="./assets/react1.jpg" class="bg-cover imgCards" alt="Imagen de proyecto"/>
+                        </figure>
+                        <div class="article-body">
+                            <h2 class="txtshadowEducation">Presentación React</h2>
+                            <p>
+                                Página web con HTML, CSS, TAILWIND Y JAVASCRIPT
+                            </p>
+                            <a href="" target="_blank" class="read-more">
+                                Ver <span class="sr-only"></span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            </div>
+        </main> 
+    
+    <div class="bgColorMain">
+    <footer aria-label="Site Footer" class="bordertop">
         <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
           <ul class="mt-8 flex justify-center gap-6 md:gap-8 ">
             <li>
@@ -370,7 +382,17 @@
           </ul>
           <p class="text-gray-700 font-medium text-center mt-[2em]">Noelia Podmoguilny &copy; 2023 </p>
         </div>
+      </div>
       </footer>
-    <script src="./index.js"></script>
+    </div>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="./src/skills.js"></script>
+    <script src="./src/carousel.js"></script>
+
 </body>
 </html>
